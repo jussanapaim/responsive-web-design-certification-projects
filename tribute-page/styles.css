@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Manrope&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--bodyFont), sans-serif;
+    color: var(--text);
+}
+:root{
+    --text: #d0fbde;
+    --background: #010904;
+    --primary: #98f5e4;
+    --secondary: #170211;
+    --accent: #d21436;
+    --bodyFont: 'Manrope', sans-serif;
+    --heading: 'IBM Plex Mono', monospace;
+}
+html {
+    font-size: 100%; /* 16px */;
+    background-color: var(--background);
+} 
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading);
+}

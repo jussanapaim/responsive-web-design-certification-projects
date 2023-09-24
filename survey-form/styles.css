@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Manrope&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--bodyFont), sans-serif;
+    color: var(--text);
+}
+:root{
+    --text: #d0fbde;
+    --background: #010904;
+    --primary: #98f5e4;
+    --secondary: #170211;
+    --accent: #d21436;
+    --bodyFont: 'Manrope', sans-serif;
+    --heading: 'IBM Plex Mono', monospace;
+}
+html {
+    font-size: 100%; /* 16px */;
+    background-color: var(--background);
+} 
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading);
+}
+header{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin-bottom: 5px;
+}
+span.clue{
+font-size: 0.8rem;   
+}
+#title{
+    color: var(--primary);
+}
+#survey-form{
+    width: 900px;
+    font-size: 1.125rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    background-color: var();
+}
+.form-group, .form-group2{
+    margin-bottom: 13px;
+}
+.form-group input, .form-group select, textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    margin: 9px 0;
+    border-radius: 2px;
+    color:var(--secondary);
+    align-self: center;
+}
+.form-group select option{
+    color:var(--secondary);
+}
+input::placeholder, textarea::placeholder{
+    color: var(--secondary);
+}
+label {
+    display: block;
+}
+#submit{
+    padding: 10px;
+    background-color: var(--accent);
+    border-radius: 2px;
+    margin: 6px;
+    outline: none;
+    border:none;
+    width: 100%;
+    align-self: center;
+}

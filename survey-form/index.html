@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FreeCodeCamp Survey Form</title>
+</head>
+<body>
+    <header>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nome</label>
+                <input type="text" name="name" id="name" placeholder="eg. Mateus Fernando" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="eg. seuemail@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Idade (opcional)</label>
+                <input type="number" name="number"id="number" min="10" max="99" placeholder="Digite sua idade">
+            </div>
+
+        <div class="form-group">
+            <p>Qual opção melhor descreve sua situação atual?</p>
+            <select id="dropdown">
+                <option value="" disabled selected>Selecione o cargo atual</option>
+                <option value="student">Estudante</option>
+                <option value="full-time-job">Trabalho a tempo integral</option>
+                <option value="full-time-learner">Aprendiz a tempo integra</option>
+                <option value="prefer-not-to-say">Prefiro não dizer</option>
+                <option value="other">Outro</option>
+            </select>
+        </div>
+        
+        <p>Você recomendaria o FreeCodeCamp para um amigo?</p>
+        <div class="form-group2">
+            <label for="definitely"><input type="radio" name="user-recommend" id="definitely" value="definitely" checked> Definitivamente!</label>
+            <label for="maybe"><input type="radio" name="user-recommend" id="maybe" value="maybe"> Talvez</label>
+            <label for="not-sure"><input type="radio" name="user-recommend" id="not-sure" value="not-sure"> Não tenho certeza</label>
+        </div>
+
+        <p>O que você gostaria que melhorasse?<span class="clue">(Clique em todas que se aplicarem)</span></p>
+            <div class="form-group2">
+                <label for="front-end-projects"><input type="checkbox" name="prefer" id="front-end-projects" value="front-end-projects"> Projetos Front-end</label>
+                <label for="back-end-projects"><input type="checkbox" name="prefer" id="back-end-projects" value="back-end-projects"> Projetos Back-end</label>
+                <label for="data-visualization"><input type="checkbox" name="prefer" id="data-visualization" value="data-visualization"> Visualização de Dados</label>
+                <label for="challenges"><input type="checkbox" name="prefer" id="challenges" value="challenges"> Desafios</label>
+                <label for="open-source-community"><input type="checkbox" name="prefer" id="open-source-community" value="open-source-community"> Comunidade Open Source </label>
+                <label for="gitter-help"><input type="checkbox" name="prefer" id="gitter-help" value="gitter-help"> Salas de Ajuda Gitter </label>
+                <label for="Videos"><input type="checkbox" name="prefer" id="Videos" value="videos"> Vídeos</label>
+                <label for="city-meetups"><input type="checkbox" name="prefer" id="city-meetups" value="city-meetups"> Reuniões em Cidades</label>
+                <label for="wiki"><input type="checkbox" name="prefer" id="wiki" value="wiki"> Wiki</label>
+                <label for="forum"><input type="checkbox" name="prefer" id="forum" value="forum"> Fórum</label>
+                <label for="add-course"><input type="checkbox" name="prefer" id="add-course" value="add-course"> Cursos Adicionais</label>
+            </div>
+
+        <p>Algum comentário ou sugestão?</p>
+        <textarea id="comment" rows="10" cols="30"></textarea>
+        <input type="submit" value="Enviar" id="submit">
+    </form>
+</main>
+</body>
+</html>
