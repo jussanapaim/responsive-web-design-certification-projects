@@ -15,10 +15,66 @@
     --bodyFont: 'Manrope', sans-serif;
     --heading: 'IBM Plex Mono', monospace;
 }
+*::selection{
+    color: var(--background);
+    background-color: var(--accent);
+}
 html {
     font-size: 100%; /* 16px */;
     background-color: var(--background);
 } 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading);
+}
+body{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+} 
+#title, #tribute-info, #img-caption{
+    text-align: center;
+}
+#title, h2{
+    text-decoration: solid 15px var(--accent) underline;
+    text-underline-offset: -6px;
+    text-decoration-skip-ink: none; 
+    text-shadow: 1px 1px 1px var(--secondary);
+}
+#tribute-info{
+    font-size: 1.2em;
+    margin-top: 9px;
+}
+#main{
+    max-width: 900px;
+    padding: 10px 20px;
+}
+#img-div{
+    padding: 2em;
+}
+#image, img{
+    display: block;
+    max-width: 100%;
+    min-width: 50%;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 6px var(--primary);
+}
+h2{
+    font-size: 1.75em;
+    margin: 10px 0;
+}
+.content{
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px 0;
+    text-indent: 2.5em;
+}
+#tribute-link{
+    text-decoration: none;
+    font-weight: bold;
+}
+#tribute-link:hover{
+    color: var(--accent);
+}
+#tribute-link:active{
+    color: var(--secondary);
 }
