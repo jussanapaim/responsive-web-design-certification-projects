@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/fcc_primary_small.svg" type="image/x-icon">
+</head>
+<body>
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>
+        CSS Technical <br> Documentation Page
+      </header>
+      <ul>
+        <li><a href="#Introdução_ao_CSS" class="nav-link">Introdução ao CSS</a></li>
+        <li><a href="#Seletores" class="nav-link">Seletores</a></li>
+        <li><a href="#Propriedades_de_Estilo" class="nav-link">Propriedades de Estilo</a></li>
+        <li><a href="#Modelo_de_Caixa" class="nav-link">Modelo de Caixa</a></li>
+        <li><a href="#Layout_e_Posicionamento" class="nav-link">Layout e Posicionamento</a></li>
+      </ul>
+    </nav>
+  <section id="main-content">
+      <section class="main-section" id="Introdução_ao_CSS">
+        <header>Introdução ao CSS</header>
+        <p>CSS é uma sigla que significa "Cascading Style Sheets" em inglês, ou seja, "Folhas de Estilo em Cascata" em português. É uma linguagem de marcação utilizada em conjunto com o HTML para controlar a apresentação visual de uma página da web. Em outras palavras, o CSS permite que você defina como os elementos HTML devem ser exibidos, incluindo cores, fontes, margens, tamanhos e posicionamento.</p>
+        <ul>
+          <li>
+            <strong>Cascata:</strong> O princípio da cascata permite que múltiplos estilos se apliquem ao mesmo elemento, com a hierarquia e a especificidade determinando qual prevalece.
+          </li>
+          <li>
+            <strong>Herança:</strong> As propriedades CSS podem ser herdadas, simplificando a estilização de elementos filhos com base nas configurações dos elementos pais.
+          </li>
+        </ul>
+        <p>Exemplo da sintaxe do CSS: </p>
+        <pre><code>
+          <span class="comment">/*Sintaxe Básica*/</span>
+          h1 { color: red; font-size: 24px; }
+          </code></pre>
+      </section>
+      <section class="main-section" id="Seletores">
+        <header>Seletores</header>
+        <p>Os seletores são ferramentas poderosas que direcionam estilos para elementos específicos. Desde os básicos de tipo, classe e ID até os avançados combinadores, pseudo-classes e pseudo-elementos, proporcionam flexibilidade. Exemplo: 'p' atinge parágrafos, ''.destaque' personaliza elementos destacados, e '#cabecalho' estiliza o cabeçalho.</p>
+        <ul>
+          <li>
+            <strong>Seletor de Classe (.) e ID (#):</strong> Permitem estilizar elementos específicos, proporcionando uma granularidade significativa.
+          </li>
+        <li>
+          Seletor Universal (*): Aplica estilos a todos os elementos, útil para resetar estilos padrão do navegador.
+        </li>
+        </ul>
+        <p> Um exemplo disso na prática: </p>
+        <pre><code>
+            <span class="comment">/* Seletor de tipo - Estiliza todos os parágrafos */</span>
+            p { color: blue; }
+
+            <span class="comment">/* Seletor de classe - Estiliza elementos com a classe 'destaque' */</span>
+            .destaque { font-weight: bold; }
+
+            <span class="comment">/* Seletor de ID - Estiliza o elemento com o ID 'cabecalho' */</span>
+            #cabecalho { background-color: gray; }
+          </code></pre>
+    </section>
+    
+    <section class="main-section" id="Propriedades_de_Estilo">
+        <header>Propriedades de Estilo</header>
+        <p>As propriedades de estilo determinam a aparência dos elementos selecionados. Cada propriedade, como color para cor do texto, 'margin' para margens e 'border' para bordas, personaliza aspectos específicos do design.</p>
+        <ul>
+          <li>
+            <strong>Propriedade 'color':</strong> Essencial para definir a cor do texto em elementos HTML, permitindo uma personalização visual do conteúdo.
+          </li>
+          <li>
+            <strong>Propriedade 'margin':</strong> Define o espaço entre a borda do elemento e os elementos vizinhos, influenciando o layout geral.
+          </li>
+        </ul>
+        <p> Um exemplo disso na prática: </p>
+        <pre><code>
+            <span class="comment">/* Define a cor do texto para verde */</span>
+            color: green;
+
+            <span class="comment">/* Adiciona uma margem de 10 pixels ao redor do elemento */</span>
+            margin: 10px;
+    
+            <span class="comment">/* Define a largura da borda como 2 pixels, sólida e vermelha */</span>
+            border: 2px solid red;
+          </code></pre>
+      </section>
+      <section class="main-section" id="Modelo_de_Caixa">
+        <header>Modelo de Caixa</header>
+        <p>O Modelo de Caixa é essencial para entender o espaço ocupado por elementos. Detalhes como box-sizing afetam como as dimensões são calculadas, enquanto margin, padding e border oferecem controle preciso sobre a disposição e aparência de cada caixa na página.</p>
+        <ul>
+          <li>
+            <strong>Preenchimento (padding):</strong> Define o espaço entre o conteúdo do elemento e sua borda, contribuindo para o espaçamento interno e o alinhamento visualmente agradável.
+          </li>
+          <li>
+            <strong>Altura e largura (height e width):</strong> Estas propriedades determinam as dimensões do elemento, controlando o tamanho vertical e horizontal, respectivamente.
+          </li>
+        </ul>
+        <p>Um exemplo disso na prática:</p>
+        <pre><code>
+            <span class="comment">/* Define a largura e altura do elemento, incluindo preenchimento e borda */</span>
+            width: 200px;
+            height: 100px;
+    
+            <span class="comment">/* Adiciona preenchimento interno ao redor do conteúdo do elemento*/~</span>
+            padding: 10px;
+    
+            <span class="comment">/* Adiciona uma borda ao redor do elemento */</span>
+            border: 1px solid black;
+          </code></pre>
+      </section>
+      <section class="main-section" id="Layout_e_Posicionamento">
+        <header>Layout e Posicionamento</header>
+        <p>Para criar layouts complexos, o CSS oferece opções avançadas de posicionamento. position: absolute permite colocação exata, enquanto flexbox (display: flex) e grid (display: grid) oferecem sistemas poderosos para organizar e alinhar elementos em duas dimensões, proporcionando designs modernos e responsivos.</p>
+        <ul>
+          <li>
+            <strong>Flexbox:</strong> Introduz um modelo de layout unidimensional, facilitando a criação de designs flexíveis e a distribuição eficiente de espaço entre os itens.
+          </li>
+        <li>
+          <strong>Grid:</strong> Oferece um sistema bidimensional para alinhamento preciso de elementos, proporcionando maior controle sobre o layout da página.
+        </li>
+      </ul>
+      <p>Um exemplo disso na prática:</p>
+      <pre><code>
+          <span class="comment">/* Define o posicionamento absoluto do elemento */</span>
+          position: absolute;
+          top: 50px;
+          left: 20px;
+    
+          <span class="comment">/* Define o elemento como uma caixa flexível */</span>
+          display: flex;
+    
+          <span class="comment">/* Alinha os itens flexíveis no centro do contêiner */</span>
+          justify-content: center;
+          align-items: center;
+        </code></pre>
+      </section>
+  </section>
+  </main>
+</body>
+</html>
